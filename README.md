@@ -42,12 +42,31 @@ Value: 859963392
 ===========CODE EXECUTION COMLETED==============
 ```
 
-**Elementary Performance reports:**
+*Elementary Performance reports:*
 
-Time consumed per iteration,
+**Analysis in microseconds**
 
-<img width="1067" alt="image" src="https://github.com/user-attachments/assets/7e330b48-9423-47ca-b054-d8dabba1641c" />
+***For map and priority queue***
 
-Memory consumed per interation,
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
+    <img src="https://github.com/user-attachments/assets/9e8f3780-cd88-4087-8e9e-6022fd3dbfc1" width=500/>
+    <img src="https://github.com/user-attachments/assets/011c4efa-24c5-42e4-8304-9b552f4af8b6" width=500/>
+</div>
+<br/>
 
-<img width="1075" alt="image" src="https://github.com/user-attachments/assets/1e50997e-9c17-45ea-ad26-53a241a49db2" />
+***For set and priority queue***
+
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
+  <img src="https://github.com/user-attachments/assets/b78c98e8-7523-4f1e-9ef0-68c29d45d19a" width=500/>
+  <img src="https://github.com/user-attachments/assets/b309ac3c-142d-403f-8ab9-30f6cf595e8e" width=500/>
+</div>
+<br/>
+
+**Analysis in milliseconds**
+
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
+    <img src="https://github.com/user-attachments/assets/7e330b48-9423-47ca-b054-d8dabba1641c" width=500/>
+    <img src="https://github.com/user-attachments/assets/1e50997e-9c17-45ea-ad26-53a241a49db2" width=500/>
+</div>
+<br/>
+
