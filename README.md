@@ -1,6 +1,9 @@
 **Link to google collab:**
 [https://colab.research.google.com/drive/1Tem4kOrgZVHPzw-PC_MGk4SGZaNC07_1?usp=sharing](https://colab.research.google.com/drive/1CnqK8fQm813n9eykRLhSlUiz1u85dV1D?usp=sharing)
 
+**Link to google doc:**
+https://docs.google.com/document/d/1gE1Zs9QFxlCLtVKKn78BrRGX_sHYi3ikEgt30xYMlXg/edit?usp=sharing
+
 **Cli**
 ```
 ❯ clang++ -std=c++17 -O2 -o my_program primeNumbers.cpp
