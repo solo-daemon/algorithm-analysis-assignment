@@ -206,7 +206,7 @@ void solution_set(int n, bool verbose=false){
 
 void test() {
     std::ofstream csv("performance_data.csv");
-    csv << "N,TimeConsumed(ms),MemoryUsed(KB)\n";
+    csv << "N,TimeConsumed(μs),MemoryUsed(KB)\n";
 
     for (int n = 1; n <= 10000000; ++n) {
         auto start = std::chrono::high_resolution_clock::now();
@@ -214,7 +214,7 @@ void test() {
         solution(n);  // Call the algorithm
 
         auto end = std::chrono::high_resolution_clock::now();
-        auto duration_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+        auto duration_ms = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
 
         size_t memory_kb = getMemoryUsageKB();
 
@@ -230,7 +230,7 @@ void test() {
 
 void test_dp() {
     std::ofstream csv("dp_performance_data.csv");
-    csv << "N,TimeConsumed(ms),MemoryUsed(KB)\n";
+    csv << "N,TimeConsumed(μs),MemoryUsed(KB)\n";
 
     for (int n = 1; n <= 10000000; ++n) {
         auto start = std::chrono::high_resolution_clock::now();
@@ -238,7 +238,7 @@ void test_dp() {
         solution_dp(n);  // Call the algorithm
 
         auto end = std::chrono::high_resolution_clock::now();
-        auto duration_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+        auto duration_ms = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
 
         size_t memory_kb = getMemoryUsageKB();
 
@@ -254,7 +254,7 @@ void test_dp() {
 
 void test_set() {
     std::ofstream csv("set_performance_data.csv");
-    csv << "N,TimeConsumed(ms),MemoryUsed(KB)\n";
+    csv << "N,TimeConsumed(μs),MemoryUsed(KB)\n";
 
     for (int n = 1; n <= 10000000; ++n) {
         auto start = std::chrono::high_resolution_clock::now();
@@ -262,7 +262,7 @@ void test_set() {
         solution_set(n);  // Call the algorithm
 
         auto end = std::chrono::high_resolution_clock::now();
-        auto duration_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+        auto duration_ms = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
 
         size_t memory_kb = getMemoryUsageKB();
 
